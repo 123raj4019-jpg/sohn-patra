@@ -141,7 +141,8 @@ p{ margin:0; }
   border-bottom:1px solid rgba(233,217,168,.08);
 }
 .nav-brand{ display:flex; align-items:center; gap:.65rem; }
-.nav-brand img{ height:32px; width:auto; }
+.nav-brand img{ height:40px; width:auto; transition:height .5s var(--ease); }
+.nav.scrolled .nav-brand img{ height:34px; }
 .nav-brand span{ font-family:var(--font-display); font-style:italic; font-size:1rem; color:var(--gold-300); }
 .nav-links{ display:flex; align-items:center; gap:2.3rem; }
 .nav-links a:not(.nav-cta){
