@@ -3,7 +3,7 @@
    Editorial, dark-canvas, photography-led design.
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500;1,9..144,600&family=Jost:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500;1,9..144,600&family=Jost:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
 
 :root{
   --maroon-950:#1c0509;
@@ -21,6 +21,7 @@
 
   --font-display:'Fraunces', 'Iowan Old Style', serif;
   --font-body:'Jost', 'Helvetica Neue', Arial, sans-serif;
+  --font-hero:'Cormorant Garamond', 'Cormorant', Garamond, 'Times New Roman', serif;
 
   --container: 1320px;
   --edge: clamp(1.25rem, 5vw, 5rem);
@@ -43,6 +44,10 @@ body{
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
 }
+
+/* The page lining: the client's paisley toned into maroon, mirrored into a seamless damask
+   tile that scrolls with the page. */
+body{ background:var(--maroon-950) url('assets/paisley-tile.jpg') center top / 1444px auto repeat; }
 
 img{ max-width:100%; display:block; }
 a{ color:inherit; text-decoration:none; }
@@ -197,37 +202,57 @@ p{ margin:0; }
     linear-gradient(180deg, rgba(20,4,8,.62) 0%, rgba(20,4,8,.06) 24%, rgba(20,4,8,.08) 58%, rgba(17,4,7,.84) 100%),
     linear-gradient(90deg, rgba(20,4,8,.42), transparent 32%, transparent 68%, rgba(20,4,8,.42));
 }
+/* Hero type is set in Cormorant Garamond: high-contrast, classical, the voice of a maison */
 .video-hero-content{
   position:absolute; right:var(--edge); bottom:12%;
-  max-width:300px;
-  display:flex; flex-direction:column; align-items:flex-end; gap:1rem;
+  max-width:460px;
+  display:flex; flex-direction:column; align-items:flex-end; gap:1.1rem;
   text-align:right;
 }
 .video-hero-caption{
   position:absolute; left:var(--edge); bottom:12%; z-index:2;
-  max-width:280px; text-align:left;
+  max-width:360px; text-align:left;
 }
-.video-hero-caption, .video-hero-content{ text-shadow:0 1px 14px rgba(20,4,8,.6); }
-.video-hero-caption .kicker{ color:var(--gold-300); margin-bottom:.8rem; }
+.video-hero-caption, .video-hero-content{ text-shadow:0 1px 16px rgba(20,4,8,.65), 0 0 2px rgba(20,4,8,.5); }
+.video-hero-caption .kicker{
+  display:flex; align-items:center; gap:.9em;
+  margin-bottom:1rem;
+  font-family:var(--font-hero); font-weight:600; font-size:.8rem; letter-spacing:.42em;
+  color:var(--gold-300);
+}
+.video-hero-caption .kicker::before{ content:""; flex:none; width:28px; height:1px; background:currentColor; opacity:.8; }
 .video-hero-caption p{
   color:#fdfaf4;
-  font-family:var(--font-display); font-weight:400;
-  font-size:clamp(1.1rem,.9vw + .8rem,1.5rem);
-  line-height:1.32;
+  font-family:var(--font-hero); font-weight:300;
+  font-size:clamp(1.55rem, 1.3vw + 1.05rem, 2.3rem);
+  line-height:1.12; letter-spacing:.005em;
 }
+.video-hero-caption p em{ font-style:italic; font-weight:400; color:var(--gold-300); }
 .video-hero-mark{ height:34px; width:auto; opacity:.92; }
 .video-hero-tag{
-  font-family:var(--font-display); font-weight:400; font-style:italic;
-  font-size:clamp(1.3rem, 1.6vw + .8rem, 2.1rem);
-  color:var(--cream-100); letter-spacing:.01em;
+  font-family:var(--font-hero); font-weight:400;
+  font-size:clamp(2rem, 2.2vw + 1.1rem, 3.3rem);
+  line-height:1.05; letter-spacing:.005em;
+  color:var(--cream-100);
+}
+.video-hero-tag .swash{
+  transform:none;
+  font-family:var(--font-hero); font-style:italic; font-weight:400;
+  color:var(--gold-300);
 }
 .video-hero-desc{
-  margin-top:-.3rem;
-  font-family:var(--font-body); font-weight:500;
-  font-size:.7rem; letter-spacing:.2em; line-height:1.9; text-transform:uppercase;
+  font-family:var(--font-hero); font-weight:600;
+  font-size:.86rem; letter-spacing:.32em; line-height:2; text-transform:uppercase;
+  font-variant-numeric:lining-nums;
   color:var(--gold-300); white-space:nowrap;
 }
-.video-hero-tag .swash{ transform:rotate(-4deg); }
+.video-hero-desc::before{
+  content:""; display:block; width:36px; height:1px; margin:0 0 .9rem auto;
+  background:var(--gold-400); opacity:.85;
+}
+@media (max-width:640px){
+  .video-hero-desc{ font-size:.72rem; letter-spacing:.24em; }
+}
 .video-hero-scroll{
   position:absolute; left:50%; bottom:2.6rem; transform:translateX(-50%);
   display:flex; flex-direction:column; align-items:center; gap:.6rem;
@@ -254,6 +279,7 @@ p{ margin:0; }
 @media (orientation:landscape) and (max-width:900px){
   .video-hero-caption, .video-hero-scroll{ display:none; }
   .video-hero-content{ left:0; right:0; bottom:8%; max-width:none; align-items:center; text-align:center; }
+  .video-hero-desc::before{ margin:0 auto .9rem; }
 }
 @media (orientation:portrait){
   .video-hero{ background-image:url('assets/video/hero-film-poster.jpg'); }
@@ -266,6 +292,7 @@ p{ margin:0; }
     align-items:center; text-align:center; padding:0 1.5rem;
   }
   .video-hero-mark, .video-hero-scroll{ display:none; }
+  .video-hero-desc::before{ margin:0 auto .9rem; }
 }
 @media (max-width:640px){
   .video-hero{ height:100svh; }
@@ -472,7 +499,16 @@ p{ margin:0; }
 .contact-list a{ font-size:.98rem; border-bottom:1px solid transparent; transition:border-color .3s; }
 .contact-list a:hover{ border-color:var(--gold-400); }
 
-.form{ border:1px solid rgba(233,217,168,.16); padding:clamp(1.8rem,2.6vw,2.4rem); }
+.form{
+  position:relative; padding:clamp(1.8rem,2.6vw,2.4rem);
+  background:linear-gradient(180deg, rgba(34,6,11,.94), rgba(22,4,8,.96));
+  border:1px solid rgba(217,189,119,.38);
+  box-shadow:inset 0 0 0 6px rgba(22,4,8,.96), inset 0 0 0 7px rgba(217,189,119,.14), 0 40px 80px -40px rgba(0,0,0,.85);
+  -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px);
+}
+.field label{ color:var(--gold-400) !important; }
+.field input::placeholder, .field textarea::placeholder{ color:rgba(233,217,168,.45); }
+.field input, .field select, .field textarea{ border-bottom-color:rgba(217,189,119,.45) !important; }
 .field{ margin-bottom:1.4rem; }
 .field label{ display:block; font-size:.66rem; letter-spacing:.16em; text-transform:uppercase; color:#c9b39c; margin-bottom:.6rem; }
 .field input, .field select, .field textarea{
