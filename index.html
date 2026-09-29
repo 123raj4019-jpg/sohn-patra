@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sohn Patra — An Heirloom of Taste</title>
+<meta name="description" content="Sohn Patra — 24K edible gold-dipped Medjool dates. Rooted in heritage, curated for modern luxury gifting.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="styles.css?v=20260929-15">
+<script>
+  // Opt into scroll choreography before first paint; fall back to a static page if script.js never arrives.
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('motion');
+    setTimeout(function () { if (!window.SP_MOTION) document.documentElement.classList.remove('motion'); }, 4000);
+  }
+</script>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="siteNav">
+  <a href="#top" class="nav-brand">
+    <img src="assets/logo.png" alt="Sohn Patra">
+    <span>Sohn&nbsp;Patra</span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#gold">Heritage</a>
+    <a href="#edit">The Edit</a>
+    <a href="#flavours">Flavours</a>
+    <a href="#gifting">Gifting</a>
+    <a href="#bespoke">Bespoke</a>
+    <a href="#contact" class="nav-cta">Enquire</a>
+  </nav>
+  <button class="nav-burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+  <span class="nav-progress" aria-hidden="true"></span>
+</header>
+
+<main id="main">
+
+  <!-- ============ VIDEO HERO ============ -->
+  <section class="video-hero" id="top">
+    <video class="video-hero-media" id="heroVideo" autoplay muted loop playsinline preload="auto" aria-label="Sohn Patra film: a gold-embossed gift box opened to reveal twelve 24K gold-dipped dates, one served and cut on a green plate">
+      <source src="assets/video/hero-film-wide.webm?v=2" type="video/webm" media="(orientation: landscape)">
+      <source src="assets/video/hero-film-wide.mp4?v=2" type="video/mp4" media="(orientation: landscape)">
+      <source src="assets/video/hero-film.webm" type="video/webm">
+      <source src="assets/video/hero-film.mp4" type="video/mp4">
+    </video>
+    <div class="video-hero-scrim"></div>
+    <div class="video-hero-shade"></div>
+    <div class="video-hero-caption">
+      <span class="kicker">Sohnpatra World</span>
+      <p>A world of heritage,<br>flavour and gold.</p>
+    </div>
+    <div class="video-hero-content">
+      <img class="video-hero-mark" src="assets/logo.png" alt="">
+      <p class="video-hero-tag">An Heirloom <span class="swash">of Taste</span></p>
+      <p class="video-hero-desc">24K Gold&#8209;Dipped Medjool Dates<br>Luxury Gifting</p>
+    </div>
+    <div class="video-hero-scroll" aria-hidden="true">
+      <span></span>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ============ HERITAGE / GOLD — editorial duet ============ -->
+  <section class="section" id="gold">
+    <div class="wrap duet">
+      <div class="duet-col">
+        <span class="kicker">A Ritual of Gold</span>
+        <h3>Not a product &mdash; a ceremony.</h3>
+        <p class="lede">Sohnpatra was born from a singular conviction: that the most profound gifting is sensory, emotional and deeply ancestral &mdash; drawn from India&rsquo;s most ancient traditions of offering gold not as ornament, but as nourishment.</p>
+      </div>
+
+      <figure class="flavour-cycle" id="flavourCycle">
+        <div class="flavour-stage" role="img" aria-label="The Connoisseur's Edit: twelve gold-finished flavours, shown in turn">
+          <img class="is-active" src="assets/flavours/pistachio.jpg" alt="" data-name="Pistachio">
+          <img src="assets/flavours/orange-peel.jpg" alt="" data-name="Orange Peel" loading="lazy">
+          <img src="assets/flavours/kiwi-lemon.jpg" alt="" data-name="Kiwi Lemon" loading="lazy">
+          <img src="assets/flavours/rose-gulkand.jpg" alt="" data-name="Rose Gulkand" loading="lazy">
+          <img src="assets/flavours/hazelnut.jpg" alt="" data-name="Hazelnut" loading="lazy">
+          <img src="assets/flavours/peri-peri-mango.jpg" alt="" data-name="Peri Peri Mango" loading="lazy">
+          <img src="assets/flavours/pineapple-paprika.jpg" alt="" data-name="Pineapple Paprika" loading="lazy">
+          <img src="assets/flavours/dark-choc-cornflake.jpg" alt="" data-name="Dark Chocolate Cornflake" loading="lazy">
+          <img src="assets/flavours/coconut-nougat.jpg" alt="" data-name="Coconut Nougat" loading="lazy">
+          <img src="assets/flavours/blueberry.jpg" alt="" data-name="Blueberry" loading="lazy">
+          <img src="assets/flavours/peanut-butter.jpg" alt="" data-name="Peanut Butter" loading="lazy">
+          <img src="assets/flavours/matcha.jpg" alt="" data-name="Matcha" loading="lazy">
+        </div>
+        <figcaption class="flavour-caption">
+          <span class="flavour-name" id="flavourName">Pistachio</span>
+        </figcaption>
+      </figure>
+
+      <div class="duet-col right">
+        <span class="kicker">24K Pure Edible Gold</span>
+        <h3>The gold you can taste.</h3>
+        <p class="lede">For centuries, edible gold has symbolised royalty and prosperity across cultures. At Sohn Patra, every date is finished in certified 24K edible gold &mdash; a simple ritual of gifting, transformed into a statement of refinement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE CONNOISSEUR'S EDIT — centered banner + film ============ -->
+  <section class="section section-tight hairline-top" id="edit">
+    <div class="wrap banner-head">
+      <span class="kicker">The Connoisseur&rsquo;s Edit</span>
+      <h2>Twelve creations. <span class="swash">One founder&rsquo;s edit.</span></h2>
+      <p class="lede" style="margin:1.4rem auto 0;text-align:center;">A refined curation personally curated by the founder &mdash; premium Medjool dates, sophisticated nut blends and globally inspired flavours, each enveloped in silky white, milk and dark chocolate.</p>
+    </div>
+    <div class="edit-film">
+      <video class="edit-film-media" id="editFilm" muted loop playsinline preload="none" poster="assets/video/edit-film-poster.jpg" aria-label="Flavour film: Medjool dates finished five ways, spicy, sour, salty, sweet and umami">
+        <source src="assets/video/edit-film.webm" type="video/webm">
+        <source src="assets/video/edit-film.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <!-- ============ FLAVOUR RIBBON — names drift with the scroll ============ -->
+  <div class="marquee" id="marquee" aria-hidden="true">
+    <div class="marquee-row marquee-fine"><div class="marquee-track"><span class="marquee-copy">24K Edible Gold<i></i>Premium Medjool Dates<i></i>Twelve Flavours<i></i>Hand&#8209;finished in Delhi<i></i>Luxury Gifting<i></i></span></div></div>
+    <div class="marquee-row marquee-grand"><div class="marquee-track"><span class="marquee-copy"><span class="mq-name">Pistachio</span><i></i><span class="mq-name">Orange Peel</span><i></i><span class="mq-name">Kiwi Lemon</span><i></i><span class="mq-name">Rose Gulkand</span><i></i><span class="mq-name">Hazelnut</span><i></i><span class="mq-name">Peri Peri Mango</span><i></i><span class="mq-name">Pineapple Paprika</span><i></i><span class="mq-name">Dark Chocolate Cornflake</span><i></i><span class="mq-name">Coconut Nougat</span><i></i><span class="mq-name">Blueberry</span><i></i><span class="mq-name">Peanut Butter</span><i></i><span class="mq-name">Matcha</span><i></i></span></div></div>
+  </div>
+
+  <!-- ============ FLAVOUR PRODUCT ROW ============ -->
+  <section class="section" id="flavours">
+    <div class="wrap">
+      <div class="banner-head" style="padding-bottom:3.5rem;">
+        <span class="kicker">Flavour Profiles</span>
+        <h2 style="font-size:clamp(2rem,1.8vw + 1rem,3rem);">Pick and choose your favourites.</h2>
+      </div>
+
+      <div class="product-grid">
+        <div class="product"><div class="product-frame"><img src="assets/flavours/pistachio.jpg" alt="Pistachio-crusted gold date" loading="lazy"></div><p class="pname">Pistachio</p><p class="pprice">&#8377;300</p></div>
+        <div class="product"><div class="product-frame"><img src="assets/flavours/orange-peel.jpg" alt="Candied orange peel gold date" loading="lazy"></div><p class="pname">Orange Peel</p><p class="pprice">&#8377;250</p></div>
+        <div class="product"><div class="product-frame"><img src="assets/flavours/kiwi-lemon.jpg" alt="Kiwi lemon gold date" loading="lazy"></div><p class="pname">Kiwi Lemon</p><p class="pprice">&#8377;250</p></div>
+        <div class="product"><div class="product-frame"><img src="assets/flavours/rose-gulkand.jpg" alt="Rose gulkand gold date" loading="lazy"></div><p class="pname">Rose Gulkand</p><p class="pprice">&#8377;250</p></div>
+        <div class="product"><div class="product-frame"><img src="assets/flavours/hazelnut.jpg" alt="Hazelnut gold date" loading="lazy"></div><p class="pname">Hazelnut</p><p class="pprice">&#8377;300</p></div>
+        <div class="product"><div class="product-frame"><img src="assets/flavours/peri-peri-mango.jpg" alt="Peri peri mango gold date" loading="lazy"></div><p class="pname">Peri Peri Mango</p><p class="pprice">&#8377;250</p></div>
+        <div class="product"><div class="product-frame"><img src="assets/flavours/pineapple-paprika.jpg" alt="Pineapple paprika gold date" loading="lazy"></div><p class="pname">Pineapple Paprika</p><p class="pprice">&#8377;250</p></div>
+        <div class="product"><div class="product-frame"><img src="assets/flavours/dark-choc-cornflake.jpg" alt="Dark chocolate cornflake gold date" loading="lazy"></div><p class="pname">Dark Choc. Cornflake</p><p class="pprice">&#8377;250</p></div>
+        <div class="product"><div class="product-frame"><img src="assets/flavours/coconut-nougat.jpg" alt="Coconut nougat gold date" loading="lazy"></div><p class="pname">Coconut Nougat</p><p class="pprice">&#8377;250</p></div>
+        <div class="product"><div class="product-frame"><img src="assets/flavours/blueberry.jpg" alt="Blueberry gold date" loading="lazy"></div><p class="pname">Blueberry</p><p class="pprice">&#8377;250</p></div>
+        <div class="product"><div class="product-frame"><img src="assets/flavours/peanut-butter.jpg" alt="Peanut butter gold date" loading="lazy"></div><p class="pname">Peanut Butter</p><p class="pprice">&#8377;250</p></div>
+        <div class="product"><div class="product-frame"><img src="assets/flavours/matcha.jpg" alt="Matcha gold date" loading="lazy"></div><p class="pname">Matcha</p><p class="pprice">&#8377;300</p></div>
+      </div>
+
+      <div class="pricing-line">
+        <div class="pl-item"><div class="k">Box of 3</div><div class="v">&#8377;1,500 approx.</div></div>
+        <div class="pl-item"><div class="k">Box of 6</div><div class="v">&#8377;3,000 approx.</div></div>
+        <div class="pl-item"><div class="k">Box of 12</div><div class="v">&#8377;4,300 approx.</div></div>
+        <div class="pl-item"><div class="k">Make it Gold</div><div class="v">+&#8377;300 / date</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATEMENT BANNER ============ -->
+  <section class="statement" id="statement">
+    <div class="statement-pin">
+      <div class="statement-bg"></div>
+      <div class="statement-glow"></div>
+      <div class="wrap">
+        <span class="kicker">Luxury You Can Taste</span>
+        <h2 class="statement-title">Crafted for those who understand <span class="swash">quiet luxury.</span></h2>
+        <a href="#gifting" class="btn-outline">Explore the Gifting Ritual</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GIFTING TIERS ============ -->
+  <section class="section hairline-top" id="gifting">
+    <div class="wrap">
+      <div class="banner-head" style="padding-bottom:3.5rem;">
+        <span class="kicker">A Ritual of Gifting</span>
+        <h2 style="font-size:clamp(2rem,1.8vw + 1rem,3rem);">Choose your ceremony.</h2>
+      </div>
+      <div class="tiers">
+        <div class="tier">
+          <div class="tier-figure"><img src="assets/box3.png" alt="Box of three gold-finished dates" loading="lazy"></div>
+          <p class="script">The Intimate</p>
+          <p class="count">Box of 3</p>
+          <p class="price">&#8377;2,200</p>
+          <a href="#contact" class="link">Enquire to Gift
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="tier">
+          <div class="tier-figure"><img src="assets/box6.png" alt="Box of six gold-finished dates" loading="lazy"></div>
+          <p class="script">The Signature</p>
+          <p class="count">Box of 6</p>
+          <p class="price">&#8377;4,400</p>
+          <a href="#contact" class="link">Enquire to Gift
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="tier">
+          <div class="tier-figure"><img src="assets/box12.png?v=2" alt="Box of twelve gold-finished dates" loading="lazy"></div>
+          <p class="script">The Grand</p>
+          <p class="count">Box of 12</p>
+          <p class="price">&#8377;8,400</p>
+          <a href="#contact" class="link">Enquire to Gift
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MISSION / FOUNDER COLLAGE ============ -->
+  <section class="section" id="mission">
+    <div class="wrap mission">
+      <div class="collage">
+        <figure class="collage-arch">
+          <img src="assets/lifestyle-vase.jpg" alt="Sohn Patra gift box beside a brass vase of red carnations" loading="lazy">
+        </figure>
+        <figure class="collage-inset">
+          <img src="assets/connoisseur-box.jpg" alt="The Connoisseur's Edit: twelve chocolate-enrobed dates in a red box beneath gold-printed paper" loading="lazy">
+        </figure>
+        <p class="collage-note" aria-hidden="true">The Atelier &middot; Delhi</p>
+      </div>
+      <div class="mission-copy">
+        <span class="kicker">Our Philosophy</span>
+        <h2>Made with the devotion of a couture atelier.</h2>
+        <p class="lede">Unhurried, intentional, and composed to be remembered &mdash; every Sohnpatra creation draws on India&rsquo;s oldest traditions of offering gold as nourishment, a gift to the senses, the spirit and the soul.</p>
+        <p class="sign">&mdash; The Sohnpatra Atelier</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNAL / NOTES ============ -->
+  <section class="section section-tight hairline-top" id="journal">
+    <div class="wrap">
+      <div class="banner-head" style="padding-bottom:3rem;">
+        <span class="kicker">Notes from the Atelier</span>
+        <h2 style="font-size:clamp(2rem,1.8vw + 1rem,3rem);">Rooted in heritage.</h2>
+      </div>
+      <div class="journal-grid">
+        <div class="journal-card">
+          <div class="jimg"><img src="assets/journal/kharibaoli.jpg?v=3" alt="Khari Baoli spice market, Delhi, since 1650" loading="lazy"></div>
+          <span class="kicker">Heritage</span>
+          <h4>Khari Baoli, since 1650.</h4>
+          <a href="#gold" class="link">Read the story
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="journal-card">
+          <div class="jimg"><img src="assets/journal/craft-table.jpg" alt="A hand setting gold-finished dates into a red leather Sohn Patra box on a gilded table" loading="lazy"></div>
+          <span class="kicker">Craft</span>
+          <h4>The gold leaf, hand-laid.</h4>
+          <a href="#gold" class="link">Read the story
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="journal-card">
+          <div class="jimg"><img src="assets/journal/studio-boxes.jpg" alt="Sohn Patra gift boxes stacked in the studio, a gold-leaf date resting on a porcelain spoon" loading="lazy"></div>
+          <span class="kicker">Studio</span>
+          <h4>Delhi, hand in hand with tradition.</h4>
+          <a href="#bespoke" class="link">Read the story
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BESPOKE ATELIER ============ -->
+  <section class="section hairline-top" id="bespoke">
+    <div class="wrap bespoke-grid">
+      <div class="bespoke-media">
+        <img src="assets/lifestyle-roses.jpg" alt="A Sohn Patra gift box with red roses, brass vase and gold dates" loading="lazy">
+      </div>
+      <div>
+        <span class="kicker">Gilded &middot; Bespoke Atelier</span>
+        <h2 style="font-size:clamp(1.9rem,1.8vw + 1rem,2.8rem);margin-top:1rem;">Your vision, gilded.</h2>
+        <p class="lede" style="margin-top:1.2rem;">Sohnpatra&rsquo;s atelier service creates entirely bespoke gifting experiences &mdash; for weddings, corporate occasions, brand collaborations and private celebrations.</p>
+        <ul class="bespoke-list">
+          <li><div><h4>Bespoke Packaging</h4><p>Boxes, trays and wraps designed around your palette.</p></div><span class="num">I</span></li>
+          <li><div><h4>Custom Flavour Profiles</h4><p>New creations, developed for your celebration.</p></div><span class="num">II</span></li>
+          <li><div><h4>Private Branding</h4><p>Your name, crest or monogram, finished in gold.</p></div><span class="num">III</span></li>
+          <li><div><h4>Premium Materials</h4><p>Silks, leathers and hand-finishes, reserved for the atelier line.</p></div><span class="num">IV</span></li>
+        </ul>
+        <a href="#contact" class="link" style="margin-top:1.8rem;">Enquire About the Atelier
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <span class="kicker">Begin Your Gold Experience</span>
+        <h2 style="margin-top:1rem;">Every extraordinary gift begins with a conversation.</h2>
+        <p class="lede">We welcome yours, with warmth.</p>
+        <ul class="contact-list">
+          <li><span class="k">Email</span><a href="mailto:arushi@sohnpatra.com">arushi@sohnpatra.com</a></li>
+          <li><span class="k">Phone</span><a href="tel:+918171778490">+91 81717 78490</a></li>
+          <li><span class="k">Instagram</span><a href="https://instagram.com/sohnpatra" target="_blank" rel="noopener">@sohnpatra</a></li>
+          <li><span class="k">Studio</span><span>Delhi</span></li>
+        </ul>
+      </div>
+
+      <form class="form" id="enquiryForm">
+        <div class="field">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="name" required placeholder="Your full name">
+        </div>
+        <div class="field">
+          <label for="focc">Occasion</label>
+          <select id="focc" name="occasion">
+            <option>Wedding</option>
+            <option>Corporate Gifting</option>
+            <option>Festival</option>
+            <option>Personal Gift</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fmsg">Message</label>
+          <textarea id="fmsg" name="message" placeholder="Tell us about your gifting ritual&hellip;"></textarea>
+        </div>
+        <button type="submit">Send Enquiry</button>
+        <p class="form-note">Opens your email client, addressed to arushi@sohnpatra.com</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER — the lid of the box: the mark embossed in gold on suede ============ -->
+<footer class="footer">
+  <div class="footer-lid">
+    <div class="wrap footer-lid-inner">
+      <a href="#top" class="footer-mark" aria-label="Sohn Patra, back to top">
+        <img src="assets/footer-mark.webp" alt="Sohn Patra" width="614" height="492" loading="lazy">
+      </a>
+      <p class="footer-tagline">Rooted in heritage. Curated for modern luxury.</p>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#gold">About Us</a></li>
+            <li><a href="#mission">Our Story</a></li>
+            <li><a href="#journal">Journal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Collection</h5>
+          <ul>
+            <li><a href="#edit">The Connoisseur&rsquo;s Edit</a></li>
+            <li><a href="#flavours">Flavours</a></li>
+            <li><a href="#gifting">Gift Boxes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Customer Care</h5>
+          <ul>
+            <li><a href="#contact">Enquire</a></li>
+            <li><a href="#bespoke">Bespoke Atelier</a></li>
+            <li><a href="mailto:arushi@sohnpatra.com">arushi@sohnpatra.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow Us</h5>
+          <div class="footer-social">
+            <a href="https://instagram.com/sohnpatra" target="_blank" rel="noopener" aria-label="Instagram, @sohnpatra">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4.2" y="4.2" width="15.6" height="15.6" rx="4.6"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.7" cy="7.3" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="mailto:arushi@sohnpatra.com" aria-label="Email arushi@sohnpatra.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.6" y="6" width="16.8" height="12" rx="1.6"/><path d="M4.2 7l7.8 6 7.8-6"/></svg>
+            </a>
+            <a href="tel:+918171778490" aria-label="Call +91 81717 78490">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M7 4h2.6l1.5 4-2 1.3a10.6 10.6 0 005.1 5.1l1.3-2 4 1.5V17a2 2 0 01-2.1 2A15 15 0 015 6.1 2 2 0 017 4z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-base">
+    <div class="wrap footer-base-inner">
+      <span class="footer-copy">&copy; 2026 Sohn Patra. All rights reserved.</span>
+      <ul class="footer-hallmarks">
+        <li>24K Edible Gold</li>
+        <li>Premium Medjool</li>
+        <li>Studio &middot; Delhi</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js?v=20260929-14"></script>
+</body>
+</html>
